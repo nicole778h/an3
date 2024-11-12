@@ -1,0 +1,47 @@
+/* Animație de intrare cu scalare și fade */
+.fade-enter {
+    opacity: 0;
+    transform: scale(0.9); /* Scalare la intrare */
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transform: scale(1); /* Scalare completă */
+    transition: opacity 300ms ease-in-out, transform 300ms ease-in-out; /* Durată și tip de tranziție */
+}
+
+/* Animație de ieșire cu scalare și fade */
+.fade-exit {
+    opacity: 1;
+    transform: scale(1); /* Scalare completă */
+}
+
+.fade-exit-active {
+    opacity: 0;
+    transform: scale(0.9); /* Scalare la ieșire */
+    transition: opacity 300ms ease-in-out, transform 300ms ease-in-out; /* Durată și tip de tranziție */
+}
+
+/* Animație de intrare cu translatare (glisare) */
+.slide-enter {
+    opacity: 0;
+    transform: translateX(-100%); /* Glisare din stânga */
+}
+
+.slide-enter-active {
+    opacity: 1;
+    transform: translateX(0); /* Reveniți la poziția normală */
+    transition: opacity 300ms ease-in-out, transform 300ms ease-in-out; /* Durată și tip de tranziție */
+}
+
+/* Animație de ieșire cu translatare (glisare) */
+.slide-exit {
+    opacity: 1;
+    transform: translateX(0); /* Elementul rămâne pe poziția sa */
+}
+
+.slide-exit-active {
+    opacity: 0;
+    transform: translateX(100%); /* Glisare spre dreapta la ieșire */
+    transition: opacity 300ms ease-in-out, transform 300ms ease-in-out; /* Durată și tip de tranziție */
+}
