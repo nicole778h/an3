@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Nume -->
+    <TextView
+        android:id="@+id/itemNume"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="4dp"
+        android:text="Nume"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <!-- Text -->
+    <TextView
+        android:id="@+id/itemText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Text"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Vârstă -->
+    <TextView
+        android:id="@+id/itemVarsta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vârstă: "
+        android:textSize="12sp" />
+
+</LinearLayout>
